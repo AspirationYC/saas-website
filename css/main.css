@@ -1,0 +1,32 @@
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-bar {
+  background-color: #000;
+}
+
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-link:hover {
+  border: 2px solid #62D56E;
+  border-radius: 3px;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
+
+footer a {
+  display: inline;
+}

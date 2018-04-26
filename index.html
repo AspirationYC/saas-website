@@ -8,80 +8,117 @@
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
   <header>
-    <nav>
-      <ul class="list-group">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tour.html">Tour</li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="sign-up.html">Sign up</a></li>
-      </ul>
+    <nav class="grid nav-bar pad-t-1-2">
+      <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 push">
+        <a href="index.html"><img class="logo icon i-32" src="images/spotify-logo.png" alt="Spotify Logo"> Spotify</a>
+      </div>
+      <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 text-center">
+        <ul class="list-group-inline">
+          <li class="island-1-8"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="island-1-8"><a class="nav-link" href="tour.html">Tour</li>
+          <li class="island-1-8"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="island-1-8"><a class="nav-link" href="sign-up.html">Sign up</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
-  <main>
-    <div>
-      <img src="images/banner.jpeg" alt="Banner">
-      <h1>Try Premium for better features!</h1>
-      <h2>Start your 30 days Premium trial now and experience all features</h2>
-      <button type="button" id="try-free"><a href="pricing.html">Try it for free</a></button>
+  <main class="grid">
+    <div class="unit unit-xs-1 unit-m-1 unit-l-1">
+      <img src="images/banner.jpeg" alt="Banner" class="img-flex relative">
+      <h1 class="pin-ct">Try Premium for better features!</h1>
+      <h2 class="pin-c">Start your 30 days Premium trial now and experience all features</h2>
+      <button type="button" id="try-free" class="pin-c"><a href="pricing.html">Try it for free</a></button>
     </div>
   </main>
-  <section>
-    <h2>What's on Spotify?</h2>
-    <h3>Music</h3>
-    <p>We have millions of songs from around the world. Find your favorite songs or discover new songs on Spotify.</p>
-    <h3>Playlists</h3>
-    <p>Do you need a playlist while you work out, jogging, gaming, studying, waiting for your bus, or anyting else? You can find playlists made by music fans.</p>
-    <h3>New Releases</h3>
-    <p>New songs or albums come every month so come check it out.</p>
-  </section>
-  <section>
-    <h2>Are you new to Spotify? Do you need a guide on how to use Spotify?</h2>
-    <p>Learn how to use Spotify step by step.</p>
-    <button type="button" id="learn-spotify"><a href="tour.html">Learn Spotify</a></button>
-  </section>
-  <section>
-    <h2>Plans</h2>
-    <p>Get your music</p>
-    <div>
-      <div>
-        <h3>Free</h3>
-        <p>0.00$ CAD</p>
-        <ul class="list-group">
-          <li>Listen to all songs</li>
-          <li>Unlimited skip</li>
-          <li>Ads free</li>
-          <li>Unlimited download</li>
-          <li>High sound quality</li>
-          <li>High video quality</li>
-        </ul>
-        <button type="button" id="free-plan"><a href="#">Get Free</a></button>
-      </div>
-      <div>
-        <h3>Premium</h3>
-        <p>10.00$ CAD</p>
-        <ul class="list-group">
-          <li>Listen to all songs</li>
-          <li>Unlimited skip</li>
-          <li>Ads free</li>
-          <li>Unlimited download</li>
-          <li>High sound quality</li>
-          <li>High video quality</li>
-        </ul>
-        <button type="button" id="premium-plan"><a href="#">Get Premium</a></button>
-      </div>
+
+  <section class="grid">
+    <div class="unit unit-xs-1 unit-m-1 unit-l-1">
+      <h2>What's on Spotify?</h2>
     </div>
-    <footer>
-      <div>
+    <div class="unit unit-xs-1 unit-m-1 unit-l-1">
+      <h3>Music</h3>
+      <p>We have millions of songs from around the world. Find your favorite songs or discover new songs on Spotify.</p>
+    </div>
+    <div class="unit unit-xs-1 unit-m-1 unit-l-1">
+      <h3>Playlists</h3>
+      <p>Do you need a playlist while you work out, jogging, gaming, studying, waiting for your bus, or anyting else? You can find playlists made by music fans.</p>
+    </div>
+    <div class="unit unit-xs-1 unit-m-1 unit-l-1">
+      <h3>New Releases</h3>
+      <p>New songs or albums come every month so come check it out.</p>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div class="unit unit-xs-1 unit-m-1 unit-l-1">
+      <h2>Are you new to Spotify? Do you need a guide on how to use Spotify?</h2>
+    </div>
+    <div class="unit unit-xs-1 unit-m-1 unit-l-1">
+      <p>Learn how to use Spotify step by step.</p>
+      <button type="button" id="learn-spotify"><a href="tour.html">Learn Spotify</a></button>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div class="unit unit-xs-1 unit-m-1 unit-l-1">
+      <h2>Plans</h2>
+    </div>
+    <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-3">
+      <h3>Free</h3>
+      <p>0.00$ CAD per month</p>
+      <ul class="list-group">
+        <li>Listen to all songs</li>
+        <li>Unlimited skip</li>
+        <li>Ads free</li>
+        <li>Unlimited download</li>
+        <li>High sound quality</li>
+        <li>High video quality</li>
+      </ul>
+      <button type="button" id="free-plan"><a href="#">Get Free</a></button>
+    </div>
+      <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-3">
+        <h3>Premium</h3>
+        <p>10.00$ CAD per month</p>
+        <ul class="list-group">
+          <li>Listen to all songs</li>
+          <li>Unlimited skip</li>
+          <li>Ads free</li>
+          <li>Unlimited download</li>
+          <li>High sound quality</li>
+          <li>High video quality</li>
+        </ul>
+        <button class="push" type="button" id="premium-plan"><a href="#">Get Premium</a></button>
+      </div>
+      <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-3">
+        <h3>Premium</h3>
+        <p>7.50$ CAD per month</p>
+        <p class="max-length">*Only people who been using Premium plan for at least one year can upgrade to Premium+</p>
+        <ul class="list-group">
+          <li>Listen to all songs</li>
+          <li>Unlimited skip</li>
+          <li>Ads free</li>
+          <li>Unlimited download</li>
+          <li>High sound quality</li>
+          <li>High video quality</li>
+        </ul>
+        <button type="button" id="premium-plus-plan"><a href="#">Get Premium+</a></button>
+      </div>
+    </section>
+    <footer class="grid">
+      <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 push pad-t-1-2 text-center">
         <small>© Spotify. 2018. All rights reserved.</small>
       </div>
-      <div>
-        <small>Follow us on</small>
-        <img src="images/facebook.svg" alt="Facebook">
-        <img src="images/twitter.svg" alt="Twitter">
-        <img src="images/instagram.svg" alt="Instagram">
+      <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 push text-center">
+        <small class="text-center">Follow us on</small>
+      </div>
+      <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 push social-media-center">
+        <a href="#"><img class="icon i-48 gutter-1-4" src="images/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img class="icon i-48 gutter-1-4" src="images/twitter.svg" alt="Twitter"></a>
+        <a href="#"><img class="icon i-48 gutter-1-4" src="images/instagram.svg" alt="Instagram"></a>
       </div>
     </footer>
 </body>
